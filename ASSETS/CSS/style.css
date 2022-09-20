@@ -1,0 +1,125 @@
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300;1,500;1,600;1,700&display=swap');
+
+.clear {clear: both;}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/ASSETS/IMAGES/capa.png');
+    background-size: cover;
+    background-position: center;    
+}
+
+header > section {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    animation-name: menu-bar;
+    animation-duration: 9s; 
+    animation-iteration-count: infinite;   
+}
+
+/*Animação --BARRA MENU--*/
+@keyframes menu-bar {
+    0% {background-color: transparent;}
+    25% {background-color: purple;}
+    50% {background-color: black;}
+    75% {background-color: purple;}
+    100% {background-color: transparent;}
+}
+
+header > section > .logo {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 2rem;  
+}
+/*Início da preparação do Layout responsivo*/
+header > section > .menu-mobile {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('/ASSETS/IMAGES/menu.png');
+    background-size: 100% 100%;
+    cursor: pointer;    
+}
+
+header > section > .menu-mobile > ul {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 75px; 
+    list-style-type: none;
+    text-align: center;    
+}
+
+header > section > .menu-mobile > ul > li {
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+}
+
+header > section > .menu-mobile > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem; 
+    font-weight: bold;   
+}
+
+header > section > .menu-mobile > ul > .impar:hover {
+    background-color: rgb(207, 121, 135);    
+}
+
+header > section > .menu-mobile > ul > .par:hover {
+    background-color:rgb(108, 8, 75);    
+}
+/*Fim da preparação do Layout responsivo*/
+
+header > section > .menu-desktop > ul > li {
+    display: inline; 
+    padding-right: 15px;  
+}
+
+header > section > .menu-desktop > ul > li > a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+/*efeito (botões MENU)*/
+header > section > .menu-desktop > ul > li > a:hover{
+    color: yellow;
+    font-weight:700;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/*Media Queries --SETUP de Responsividade*/
+@media screen and (max-width: 768px) {
+    header > section > .menu-desktop {
+        display: none;
+    }
+
+    header > section {
+        justify-content: space-between;
+        transition: 1s;
+    }
+
+    header > section > .menu-mobile {
+        display: block;        
+    }
+
+    header > section > .menu-mobile:hover ul {
+        display: block;        
+    }
+    /*Esse ajuste do MENU acompanha a progressão do curso da Danki Code*/
+    /*Após a ministração do Capítulo de JavaScript farei um novo projeto apresentando os recursos*/
+}
