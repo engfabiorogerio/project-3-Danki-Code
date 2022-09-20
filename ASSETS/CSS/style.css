@@ -120,6 +120,59 @@ header > section > .menu-desktop > ul > li > a:hover{
     color: rgb(244, 244, 169);
 }
 
+/*Seção Description*/
+
+.description{
+    width: 100%;
+    height: 50vh;
+    background-color: #6c17a5;
+}
+
+.description h2 {
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: rgb(196, 185, 185);
+    padding: 5% 0 1% 10%;
+}
+
+.description p {
+    color: rgb(196, 185, 185);
+    font-size: 1.5rem;
+    padding: 0 0 0 10%;
+}
+
+.description ul {
+    padding: 0 0 0 10%;
+}
+
+.description ul li {
+    font-weight: bold;
+    color: rgb(196, 185, 185);
+    margin-left: 18px;
+    font-size: 1.3rem;
+}
+
+.description [type="button"] {
+    margin: 1% 0 0 10%;
+    border: none;
+    border-radius: 25px;
+    width: 140px;
+    height: 40px;     
+}
+
+.description [type="button"]:hover {
+    background-color: rgb(170, 35, 168);
+    color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.description img {
+    position: absolute;
+    left: 60%;
+    top: 92.3%;
+    height: 450px;
+}
 
 /*Media Queries --SETUP de Responsividade*/
 @media screen and (max-width: 768px) {
@@ -153,6 +206,24 @@ header > section > .menu-desktop > ul > li > a:hover{
     }
 
     .title p {
-        text-align: center;       
+        text-align: center;            
     }
+
+    .description {
+        text-align: center;
+        height: 40vh;
+    }
+
+    .description p {
+        margin-bottom: 15px;
+    }
+
+    .description li {
+        list-style-type: none;
+    }
+
+    .description img {
+        display: none;
+    }
+
 }
