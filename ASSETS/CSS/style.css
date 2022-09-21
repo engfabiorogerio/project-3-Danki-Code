@@ -208,60 +208,71 @@ header > section > .menu-desktop > ul > li > a:hover{
     height: 60vh;
 }
 
-.part1 {
+.myTeam > .part1 {
+    float: left;
     width: 50%;
     height: 60vh;
     background-color: rgb(170, 35, 168);
-    color: white;
-    padding: 200px 0 90px 0;
-    float: left;
 }
 
-.wraper-part1 {
-    max-width: 380px;
+.myTeam > .part1 > .part1-wraper {
+    width: 100%;
+    max-width: 400px;
+    padding: 210px 15px 0 10px;
     float: right;
 }
 
-.wraper-part1 h2 {
+.myTeam > .part1 > .part1-wraper h2 {
     font-size: 3rem;
+    color:rgb(196, 185, 185);
     font-weight: normal;
-    margin-bottom: 15px;
 }
 
-.wraper-part1 p {
-    font-size: 1rem;
-    text-align: justify; 
-    padding-right: 10px;
-    padding-top: 10px;
+.myTeam > .part1 > .part1-wraper p {
+    line-height: 30px;
+    color:rgb(196, 185, 185);
+    font-size: 1.5rem;
 }
 
-.part2 {
-    position: absolute;
-    left: 50%;   
-    background-color: white;
+.myTeam > .part2 {
+    float: right;
     width: 50%;
     height: 60vh;
-    padding: 0 0 0 0;
 }
 
-.myself {
+.myTeam > .part2 > .part2-wraper {
+    width: 100%;
+    max-width: 400px;
+    padding: 210px 10px 0 15px;
     float: left;
-    position: absolute;
-    top: -56%;  
-    max-width: 350px;
-    padding-left: 30px;
 }
 
-.title-author h2 {
+.myTeam > .part2 > .part2-wraper > .meusDados {
+    display: flex;
+}
+
+.myTeam > .part2 > .part2-wraper > .meusDados > .meusDados-texto {
+    width: 100%;
+    max-width: 300px;
+}
+
+.myTeam > .part2 > .part2-wraper > .meusDados > .meusDados-texto h2 {
     font-size: 3rem;
+    color:rgb(170, 35, 168);
     font-weight: normal;
-    color: rgb(170, 35, 168);
-    margin-bottom: 15px;
 }
 
-.text-author p {
-    color: rgb(170, 35, 168);
-    font-size: 1rem;
+.myTeam > .part2 > .part2-wraper > .meusDados > .meusDados-texto h3 {
+    font-size: 1.2rem;
+    color:rgb(170, 35, 168);
+    font-weight: bold;
+}
+
+.myTeam > .part2 > .part2-wraper > .meusDados > .meusDados-texto p {
+    color:rgb(170, 35, 168);
+    line-height: 20px;
+    font-size: 1.5rem;
+    padding-top: 10px;
 }
 
 .slider {
@@ -279,6 +290,113 @@ header > section > .menu-desktop > ul > li > a:hover{
     cursor: pointer;
     border-radius: 8px;
     background-color: gray;
+}
+
+.meusDados-photo {
+    width: 50px;
+    height: 50px;
+    background-image: url('/ASSETS/IMAGES/fabio.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid black;    
+}
+
+.contact-and-map {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(67, 8, 67);
+}
+
+.contact-and-map > .contact {
+    width: 50%;
+    float: left;
+}
+
+.contact-wraper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;    
+    padding: 30px 15px;
+}
+
+.contact-wraper h2 {
+    font-size: 3rem;
+    color:rgb(196, 185, 185);
+    font-weight: normal;
+}
+
+.contact-wraper p {
+    color:rgb(196, 185, 185);
+    font-size: 1.3rem;
+}
+
+.contact-wraper form input{
+    padding: 10px 0 ;
+}
+
+.contact-wraper form input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    height: 48px;
+    margin: 10px 0 ;
+    padding: 0 5px;
+}
+
+.contact-wraper form input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    height: 48px;
+    margin: 10px 0 ;
+    padding: 0 5px;
+}
+
+.contact-wraper textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 48px;
+    margin: 10px 0 ;
+    padding: 0 5px;
+}
+
+.contact-wraper form input[type="submit"] {
+    margin: 1% 0 0 0;
+    border: none;
+    border-radius: 25px;
+    width: 140px;
+    height: 40px;   
+}
+
+.contact-wraper form input[type="submit"]:hover {
+    background-color: rgb(170, 35, 168);
+    color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.map {
+    float: right;   
+    display: block;
+    width: 100%;
+    max-width: 600px;    
+    justify-content: center;
+    margin: 4% auto;
+}
+
+
+
+.map h2{
+    font-size: 3rem;
+    color:rgb(196, 185, 185);
+    font-weight: normal;
+}
+
+.map > .map-insert {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    background-color: gray;
+    border: 1px solid black;
 }
 /*Media Queries --SETUP de Responsividade*/
 @media screen and (max-width: 768px) {
